@@ -1,28 +1,56 @@
-# DdfXplatformWorkshop
+# Echtes Cross-Platform mit HTML5 und JavaScript
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+[.NET Day Franken](http://www.dotnet-day-franken.de/workshops/item/1-echtes-cross-platform-mit-html5-und-javascript-in-action), 12. Mai 2017, 09:00–17:00 Uhr, Le Méridien Grand Hotel Nürnberg.
 
-## Development server
+Your trainers: [Christian Liebel](https://twitter.com/chris_liebel), [Manuel Rauber](https://twitter.com/ManuelRauber), Thinktecture AG, Karlsruhe.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+- [Node.js 6.10.1 LTS or higher](https://nodejs.org/en/)
+- [Git](https://git-scm.com/) (recommended)
+- Editor of your choice ([WebStorm](https://www.jetbrains.com/webstorm/), [Visual Studio Code](https://code.visualstudio.com/), …)
+- Latest version of [Google Chrome](https://www.google.de/chrome/browser/desktop/)
+- Laptop
 
-## Build
+### Mobile Devices
+If you want to run the demo application on your mobile device as well, you need the native platform SDKs and/or IDEs for the target platform.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+#### Windows
 
-## Running unit tests
+- Windows PC
+- Microsoft Visual Studio
+- Windows 10 SDK
+- Windows Phone 8.1 SDK
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### iOS
 
-## Running end-to-end tests
+- Mac
+- Xcode
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+#### Android
 
-## Further help
+- Android Studio
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Please try this at home
+
+**NOTE:** Web technologies move fast and quickly. As there might be new releases in the meantime, we strictly recommend you to perform the following installation steps not earlier than one week before our workshop, as we might update the versions in this repository until then.
+
+As Hotel WiFis tend to be unreliable, we kindly ask you to install the required third-party packages at home or any place with a stable internet connection. On your command line, please run:
+
+```
+npm uninstall -g angular-cli @angular/cli
+npm cache clear
+npm install -g @angular/cli@1.0.0
+```
+
+Next, navigate to a folder of your choice and execute:
+
+```
+git clone https://github.com/thinktecture/ddf-xplatform-workshop.git
+cd ddf-xplatform-workshop
+npm install   # or yarn (if installed)
+```
+
+Or, if you prefer SSH, use this checkout URL: `git@github.com:thinktecture/ddf-xplatform-workshop.git`
