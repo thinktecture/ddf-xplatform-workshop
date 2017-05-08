@@ -8,7 +8,7 @@ Your trainers: [Christian Liebel](https://twitter.com/chris_liebel), [Manuel Rau
 
 ### Prerequisites
 
-- [Node.js 6.10.1 LTS or higher](https://nodejs.org/en/)
+- [Node.js 6.10.3 LTS or higher](https://nodejs.org/en/)
 - [Git](https://git-scm.com/) (recommended)
 - Editor of your choice ([WebStorm](https://www.jetbrains.com/webstorm/), [Visual Studio Code](https://code.visualstudio.com/), …)
 - Latest version of [Google Chrome](https://www.google.de/chrome/browser/desktop/)
@@ -42,7 +42,7 @@ As Hotel WiFis tend to be unreliable, we kindly ask you to install the required 
 ```
 npm uninstall -g angular-cli @angular/cli
 npm cache clear
-npm install -g @angular/cli@1.0.0
+npm install -g @angular/cli@1.0.2
 ```
 
 Next, navigate to a folder of your choice and execute:
