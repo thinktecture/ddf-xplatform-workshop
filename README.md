@@ -14,25 +14,6 @@ Your trainers: [Christian Liebel](https://twitter.com/chris_liebel), [Manuel Rau
 - Latest version of [Google Chrome](https://www.google.de/chrome/browser/desktop/)
 - Laptop
 
-### Mobile Devices
-If you want to run the demo application on your mobile device as well, you need the native platform SDKs and/or IDEs for the target platform.
-
-#### Windows
-
-- Windows PC
-- Microsoft Visual Studio
-- Windows 10 SDK
-- Windows Phone 8.1 SDK
-
-#### iOS
-
-- Mac
-- Xcode
-
-#### Android
-
-- Android Studio
-
 ### Please try this at home
 
 **NOTE:** Web technologies move fast and quickly. As there might be new releases in the meantime, we strictly recommend you to perform the following installation steps not earlier than one week before our workshop, as we might update the versions in this repository until then.
