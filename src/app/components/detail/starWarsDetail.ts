@@ -3,6 +3,7 @@ import {StarWarsService} from '../../services/starWars';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs/Rx';
 import {ModelHelperService} from '../../services/modelHelper';
+import {ShareService} from '../../services/share';
 
 @Component({
   selector: 'app-star-wars-detail',
@@ -16,7 +17,7 @@ export class StarWarsDetailComponent implements OnInit, OnDestroy {
   public id: number;
   public modelProperties: Array<{ key: string, value: string }>;
 
-  constructor(private _activatedRoute: ActivatedRoute, private _starWarsService: StarWarsService) {
+  constructor(private _activatedRoute: ActivatedRoute, private _starWarsService: StarWarsService, private _shareService: ShareService) {
     this._initMap();
   }
 
@@ -41,5 +42,10 @@ export class StarWarsDetailComponent implements OnInit, OnDestroy {
     if (this._subscription) {
       this._subscription.unsubscribe();
     }
+  }
+
+  public share(): void {
+      this._shareService.share('StarWars!',
+        `Wow! Take a look at this amazing character:\r\n\r\n${this.modelProperties.map(o => o.key + ': ' + o.value).join('\r\n')}`);
   }
 }

@@ -16,7 +16,9 @@ import {StarWarsDetailComponent} from './components/detail/starWarsDetail';
 import {PokemonListComponent} from './components/list/pokemonList';
 import {PokemonDetailComponent} from './components/detail/pokemonDetail';
 import {PokemonService} from './services/pokemon';
+import {ShareService, shareServiceFactory, shareServiceFactoryDeps} from './services/share';
 import {DisplayTextPipe} from './pipes/displayText';
+import {ElectronService} from './services/electron';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,13 @@ import {DisplayTextPipe} from './pipes/displayText';
   providers: [
     WindowRef,
     StarWarsService,
-    PokemonService
+    PokemonService,
+    ElectronService,
+    {
+      provide: ShareService,
+      useFactory: shareServiceFactory,
+      deps: shareServiceFactoryDeps
+    }
   ]
 })
 export class AppModule {
