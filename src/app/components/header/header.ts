@@ -8,7 +8,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['header.scss']
 })
 export class HeaderComponent {
-    public get isBackChevronVisible(): boolean {
+  public get isBackChevronVisible(): boolean {
     // Mock implementation, to be extended to only show the button on iOS
     return this._location.path() !== '/home';
   }
