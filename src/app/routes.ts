@@ -1,7 +1,9 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from './components/home/home';
-import {ListComponent} from './components/list/list';
-import {DetailComponent} from './components/detail/detail';
+import {StarWarsListComponent} from './components/list/starWarsList';
+import {StarWarsDetailComponent} from './components/detail/starWarsDetail';
+import {PokemonListComponent} from './components/list/pokemonList';
+import {PokemonDetailComponent} from './components/detail/pokemonDetail';
 
 export const ROUTES: Routes = [
   {
@@ -18,11 +20,24 @@ export const ROUTES: Routes = [
     children: [
       {
         path: 'list/:model/:page',
-        component: ListComponent
+        component: StarWarsListComponent
       },
       {
         path: 'detail/:model/:id',
-        component: DetailComponent
+        component: StarWarsDetailComponent
+      }
+    ]
+  },
+  {
+    path: 'pokemon',
+    children: [
+      {
+        path: 'list/pokemon/:page',
+        component: PokemonListComponent
+      },
+      {
+        path: 'detail/pokemon/:id',
+        component: PokemonDetailComponent
       }
     ]
   }

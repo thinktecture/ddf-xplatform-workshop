@@ -5,10 +5,10 @@ import {BaseModel} from '../../models/baseModel';
 import {Subscription} from 'rxjs/Rx';
 
 @Component({
-  selector: 'app-list',
+  selector: 'app-star-wars-list',
   templateUrl: 'list.html'
 })
-export class ListComponent implements OnInit, OnDestroy {
+export class StarWarsListComponent implements OnInit, OnDestroy {
   private _serviceMap: Map<string, Function> = new Map<string, Function>();
   private _subscription: Subscription;
 
