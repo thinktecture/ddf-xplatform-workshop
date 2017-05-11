@@ -5,10 +5,10 @@ import {Subscription} from 'rxjs/Rx';
 import {ModelHelperService} from '../../services/modelHelper';
 
 @Component({
-  selector: 'app-star-wars-detail',
+  selector: 'app-detail',
   templateUrl: 'detail.html'
 })
-export class StarWarsDetailComponent implements OnInit, OnDestroy {
+export class DetailComponent implements OnInit, OnDestroy {
   private _serviceMap: Map<string, Function> = new Map<string, Function>();
   private _subscription: Subscription;
 
