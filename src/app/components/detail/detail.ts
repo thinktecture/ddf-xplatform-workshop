@@ -6,10 +6,10 @@ import {ModelHelperService} from '../../services/modelHelper';
 import {ShareService} from '../../services/share';
 
 @Component({
-  selector: 'app-star-wars-detail',
+  selector: 'app-detail',
   templateUrl: 'detail.html'
 })
-export class StarWarsDetailComponent implements OnInit, OnDestroy {
+export class DetailComponent implements OnInit, OnDestroy {
   private _serviceMap: Map<string, Function> = new Map<string, Function>();
   private _subscription: Subscription;
 

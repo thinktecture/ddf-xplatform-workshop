@@ -10,12 +10,9 @@ import {HomeComponent} from './components/home/home';
 import {HeaderComponent} from './components/header/header';
 import {MenuComponent} from './components/menu/menu';
 import {WindowRef} from './services/windowRef';
-import {StarWarsListComponent} from './components/list/starWarsList';
+import {ListComponent} from './components/list/list';
 import {StarWarsService} from './services/starWars';
-import {StarWarsDetailComponent} from './components/detail/starWarsDetail';
-import {PokemonListComponent} from './components/list/pokemonList';
-import {PokemonDetailComponent} from './components/detail/pokemonDetail';
-import {PokemonService} from './services/pokemon';
+import {DetailComponent} from './components/detail/detail';
 import {ShareService, shareServiceFactory, shareServiceFactoryDeps} from './services/share';
 import {DisplayTextPipe} from './pipes/displayText';
 import {DesktopIntegrationService} from './services/desktopIntegration';
@@ -27,10 +24,8 @@ import {ElectronService} from './services/electron';
     HomeComponent,
     HeaderComponent,
     MenuComponent,
-    StarWarsListComponent,
-    StarWarsDetailComponent,
-    PokemonListComponent,
-    PokemonDetailComponent,
+    ListComponent,
+    DetailComponent,
     DisplayTextPipe
   ],
   imports: [
@@ -43,7 +38,6 @@ import {ElectronService} from './services/electron';
   providers: [
     WindowRef,
     StarWarsService,
-    PokemonService,
     ElectronService,
     DesktopIntegrationService,
     {
