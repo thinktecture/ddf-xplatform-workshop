@@ -19,6 +19,7 @@ import {PokemonService} from './services/pokemon';
 import {ShareService, shareServiceFactory, shareServiceFactoryDeps} from './services/share';
 import {DisplayTextPipe} from './pipes/displayText';
 import {ElectronService} from './services/electron';
+import {DesktopIntegrationService} from './services/desktopIntegration';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import {ElectronService} from './services/electron';
     StarWarsService,
     PokemonService,
     ElectronService,
+    DesktopIntegrationService,
     {
       provide: ShareService,
       useFactory: shareServiceFactory,
