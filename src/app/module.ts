@@ -13,7 +13,10 @@ import {WindowRef} from './services/windowRef';
 import {ListComponent} from './components/list/list';
 import {StarWarsService} from './services/starWars';
 import {DetailComponent} from './components/detail/detail';
+import {ShareService, shareServiceFactory, shareServiceFactoryDeps} from './services/share';
 import {DisplayTextPipe} from './pipes/displayText';
+import {DesktopIntegrationService} from './services/desktopIntegration';
+import {ElectronService} from './services/electron';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,14 @@ import {DisplayTextPipe} from './pipes/displayText';
   bootstrap: [RootComponent],
   providers: [
     WindowRef,
-    StarWarsService
+    StarWarsService,
+    ElectronService,
+    DesktopIntegrationService,
+    {
+      provide: ShareService,
+      useFactory: shareServiceFactory,
+      deps: shareServiceFactoryDeps
+    }
   ]
 })
 export class AppModule {
